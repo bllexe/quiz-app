@@ -1,0 +1,33 @@
+GET http://localhost:8080/api/question/1
+Accept: application/json
+
+###
+GET http://localhost:8080/api/question/all
+Accept: application/json
+
+###
+GET http://localhost:8080/api/question/subject
+Accept: application/json
+
+###
+POST http://localhost:8080/api/question/create
+Content-Type: application/json
+
+
+{
+  "question": "Match the country with its capital.",
+  "subject": "Geography",
+  "questionType": "Matching",
+  "choices": {
+    "A": ["France", "Paris"],
+    "B": ["Germany", "Berlin"],
+    "C": ["Italy", "Rome"]
+  },
+  "correctAnswer": {
+    "A": ["France", "Paris"]
+  }
+}
+
+###
+
+
